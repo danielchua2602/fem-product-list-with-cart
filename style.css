@@ -1,0 +1,534 @@
+:root {
+  /* COLORS */
+  --clr-red-400: hsl(14, 86%, 42%);
+  --clr-red-500: hsl(14, 86%, 32%);
+
+  --clr-green-400: hsl(159, 69%, 38%);
+
+  --clr-rose-50: hsl(20, 50%, 98%);
+  --clr-rose-100: hsl(13, 31%, 94%);
+  --clr-rose-300: hsl(14, 25%, 72%);
+  --clr-rose-400: hsl(7, 20%, 60%);
+  --clr-rose-500: hsl(12, 20%, 44%);
+  --clr-rose-900: hsl(14, 65%, 9%);
+
+  /* FONTS */
+  --ff-primary: 'Red Hat Text', san-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-extra-bold: 700;
+
+  --fs-300: 0.875rem;
+  --fs-400: 0.9375rem;
+  --fs-500: 1rem;
+  --fs-700: 2rem;
+  --fs-800: 2.5rem;
+
+  --border-radius: 1rem;
+  --padding-s: 2rem;
+  --padding-m: 6rem
+
+}
+
+/* Utility Class */
+.bold-text {
+  font-weight: var(--fw-bold);
+}
+
+.extra-bold-text {
+  font-weight: var(--fw-extra-bold);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+
+.clr-rose-500 {
+  color: var(--clr-rose-500);
+}
+/* End of Utility Class */
+
+button {
+  border-style: solid;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  width: auto;
+  
+  padding: var(--padding-m);
+  
+  font-family: var(--ff-primary);
+  
+  background-color: var(--clr-rose-50);
+  color: var(--clr-rose-900);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 0.68fr 0.32fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: var(--padding-s)
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.circle-btn {
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-group {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.pad-top-btm-1 {
+  padding: 1rem 0;
+}
+
+.small-img {
+  height: auto;
+  width: 4rem;
+
+  border-radius: 0.5rem;
+}
+
+.products {
+  display: grid;
+  gap: 3rem;
+}
+
+.products h1 {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-extra-bold);
+}
+
+.items-container {
+  display: grid;
+  grid-template-columns: 
+    repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem 2rem;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 1rem;
+}
+
+.btn-container {
+  min-width: 65%;
+
+  position: relative;
+  top: -1.5rem;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 1rem 3rem;
+
+  font-weight: var(--fw-bold);
+
+  border-radius: 3rem;
+  border-color: var(--clr-rose-300);
+  background-color: white;
+  cursor: pointer;
+}
+
+.default-btn-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+.selected-btn-content {
+  width: 100%;
+  min-height: 3.625rem;
+  padding: 1rem;
+
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 3rem;
+  border-color: var(--clr-rose-500);
+  background-color: var(--clr-red-400);
+  cursor: pointer;
+}
+
+.selected-btn-content button {
+  background-color: var(--vlr-red-400);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-color: white;
+}
+
+.selected-btn-content button:hover {
+  background-color: white;
+  
+  border-color: var(--clr-red-400);
+  stroke: var(--clr-red-400);
+}
+
+.item-counter {
+  color: white;
+  font-weight: var(--fw-bold);
+}
+.item-category {
+  font-size: var(--fs-400);
+  color: var(--clr-rose-500);
+}
+
+.item-name {
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fs-500);
+
+  color: var(--clr-rose-900);
+}
+
+.item-price {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-500);
+
+  color: var(--clr-red-400);
+}
+
+.cart {
+  height: auto;
+  padding: 2rem;
+
+  border-radius: var(--border-radius);
+
+  background-color: white;
+}
+
+.cart h2 {
+  padding-bottom: 1rem;
+
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fs-700);
+
+  color: var(--clr-red-400);
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-cart svg {
+  margin: 2rem auto;
+}
+
+.empty-cart-text {
+  color: var(--clr-rose-500);
+  font-weight: var(--fw-bold);
+
+  margin-inline: auto;
+  padding: 0 2rem;
+}
+
+.cart-items {
+  display: block;
+}
+
+.cart-item {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 2px solid var(--clr-rose-100);
+  padding: 2rem 0;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+  
+  gap: 0.5rem;
+
+  font-size: var(--fs-400);
+}
+
+.cart-item-name {
+  font-weight: var(--fw-extra-bold);
+}
+
+.cart-item-quantity {
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-red-400);
+
+  padding-right: 0.5rem;
+}
+
+.cart-item-price {
+  color: var(--clr-rose-500);
+}
+
+.cart-total-item-price {
+  font-weight: var(--fw-bold);
+  color: var(--clr-rose-500);
+
+  padding-left: 0.3rem;
+}
+
+.remove-btn {
+  display: grid;
+  place-items: center;
+
+  padding: 0.2rem;
+  background-color: white;
+
+  border-color: var(--clr-rose-300);
+}
+
+.remove-btn:hover {
+  stroke: white;
+  background-color: var(--clr-rose-300);
+}
+
+.order-summary-container {
+  display: none;
+  flex-direction: column;
+  
+  row-gap: 2rem;
+
+  padding-top: 2rem;
+}
+
+.order-summary-price {
+  width: auto;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-summary-notice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 0.5rem;
+
+  column-gap: 0.5rem;
+  padding: 1rem 0;
+  background-color: var(--clr-rose-50);
+}
+
+.order-confirm-btn {
+  color: white;
+  min-height: 3.625rem;
+
+  padding: 1rem 0;
+  background-color: var(--clr-red-400);
+  border: 0;
+  border-color: var(--clr-red-400);
+  border-radius: 3rem;
+}
+
+.order-confirm-btn:hover {
+  background-color: var(--clr-red-500);
+  border-color: var(--clr-red-500);
+}
+
+.order-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  height: auto;
+  min-width: 30vw;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+
+    border: 0;
+    border-radius: 0;
+  }
+}
+
+
+.ordered-items {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--clr-rose-50);
+  border-radius: 1rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.ordered-item {  
+  min-height: 6rem;
+  width: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 0;
+
+  border-bottom: 1px solid var(--clr-rose-100);
+}
+
+.new-order-btn {
+  min-height: 3.625rem;
+}
+
+
+
+/* Browser reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}

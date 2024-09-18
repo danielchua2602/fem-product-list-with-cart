@@ -6,7 +6,7 @@ This is a solution to the [Product list with cart challenge on Frontend Mentor](
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Learning Points](#what-i-learned)
@@ -41,7 +41,7 @@ Automatically adjust cart item size in different resolutions
 
 #### Mobile
 ---
-![Mobile-Empty](.\screenshot\mobile-empty.jpg)
+![Mobile-Empty](\screenshot\mobile-empty.jpg)
 ![Mobile-Selected](.\screenshot\mobile-selected.jpg)
 ![Mobile-Order-Confirmed](.\screenshot\mobile-order-confirmed.jpg)
 

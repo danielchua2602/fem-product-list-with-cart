@@ -41,8 +41,7 @@ Automatically adjust cart item size in different resolutions
 
 #### Mobile
 ---
-![Mobile-Empty](./screenshot/mobile-empty.jpg)
-![Mobile-Selected](./screenshot/mobile-selected.jpg)
+![Mobile-Empty](./screenshot/mobile-empty.jpg) ![Mobile-Selected](./screenshot/mobile-selected.jpg) 
 ![Mobile-Order-Confirmed](./screenshot/mobile-order-confirmed.jpg)
 
 ## My process
@@ -54,9 +53,7 @@ Automatically adjust cart item size in different resolutions
 - CSS
 - JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### Learning Points
+### Learning Points & Bugs 
 
 Some learning points I have from doing the challenge:
 
@@ -66,4 +63,7 @@ Some learning points I have from doing the challenge:
 
 2. Use utility classes for html elements, instead of creating unique classes to style them
 
-Might or might not work on these learning points. :-)
+When too many orders are selected in mobile, it overflows... 
+![mobile-order-confirmed-overflow-how](./screenshot/mobile-order-confirmed-overflow-how.jpg)
+
+Might or might not work/fix on these later. :-)

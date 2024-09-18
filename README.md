@@ -32,18 +32,18 @@ Some screenshots of what I have made
 
 #### Desktop
 ---
-![Desktop-Empty](.\screenshot\desktop-empty.jpg)
+![Desktop-Empty](./screenshot/desktop-empty.jpg)
 Automatically adjust cart item size in different resolutions
-![Desktop-Empty-Smaller-Res](.\screenshot\desktop-empty-smaller-res.jpg)
-![Desktop-Selected](.\screenshot\desktop-selected.jpg)
-![Desktop-Order-Confirmed](.\screenshot\desktop-order-confirmed.jpg)
+![Desktop-Empty-Smaller-Res](./screenshot/desktop-empty-smaller-res.jpg)
+![Desktop-Selected](./screenshot/desktop-selected.jpg)
+![Desktop-Order-Confirmed](./screenshot/desktop-order-confirmed.jpg)
 
 
 #### Mobile
 ---
-![Mobile-Empty](\screenshot\mobile-empty.jpg)
-![Mobile-Selected](.\screenshot\mobile-selected.jpg)
-![Mobile-Order-Confirmed](.\screenshot\mobile-order-confirmed.jpg)
+![Mobile-Empty](./screenshot/mobile-empty.jpg)
+![Mobile-Selected](./screenshot/mobile-selected.jpg)
+![Mobile-Order-Confirmed](./screenshot/mobile-order-confirmed.jpg)
 
 ## My process
 
